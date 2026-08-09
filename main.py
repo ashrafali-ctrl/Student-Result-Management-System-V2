@@ -6,10 +6,10 @@ from database import connection
 def security(a_pass):
       with open ("security.txt","r") as file:
                 for password in file:
-                      if password == a_pass:
+                      if password.strip() == a_pass:
                             return "granted"
-                      else:
-                            return "invalid"
+      return "invalid"
+
 while True:
     os.system("cls")
     print("----- STUDENT RESULT MANAGEMENT SYSTEM -----")
