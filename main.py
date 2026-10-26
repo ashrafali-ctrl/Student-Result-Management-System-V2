@@ -26,6 +26,7 @@ while True:
                 admin()
             else:
                 print("! -- INVALID PASSWORD -- !")
+                input("Press Enter to continue ...")
     elif choice in ("2", "STUDENT"):
           student()
             
